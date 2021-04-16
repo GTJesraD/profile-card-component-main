@@ -6,20 +6,21 @@
 body {
     box-sizing: border-box;
     background-color: hsl(185, 75%, 39%);
-    width: 1440px
+    width: 1440px;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
-.background{
+.background {
     position: fixed;
-   
 }
+
 #img-1 {
     position: absolute;
     top: -450px;
     right: -700px;
 }
 
-#img-2{
+#img-2 {
     position: absolute;
     top: 500px;
     left: 700px;
@@ -34,6 +35,85 @@ body {
 
 .card {
     background-color: white;
-    min-height: 450px;
+    min-height: 380px;
     flex: 1 1 350;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+}
+
+.top-card img {
+    border-radius: 15px 15px 0 0;
+    height: 100%;
+    width: 100%;
+}
+
+.mid-card {
+    position: relative;
+}
+
+.mid-card>img {
+    border-radius: 50%;
+    border: solid 5px white;
+    position: absolute;
+    right: 0;
+    left: calc(50% - 48px);
+    top: 90px;
+}
+
+.name-age {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 68px;
+    margin-bottom: 10px;
+}
+
+.name-age>p:first-of-type {
+    font-weight: 700;
+    margin-right: 2.5%;
+    color: hsl(229, 23%, 23%);
+}
+
+.name-age>p:last-of-type {
+    color: hsl(0, 0%, 59%);
+    ;
+}
+
+p {
+    text-align: center;
+}
+
+.bottom-card>p:last-child {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer-card-all {
+    border-top: solid 0.1em hsl(0, 0%, 59%);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.one, .two, .three {
+    padding: 25px 25px 25px 25px;
+    width: 100%;
+}
+
+.footer-card>p:first-of-type {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin-bottom: 5%;
+}
+
+.footer-card>p:last-child {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 14px;
 }
